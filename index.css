@@ -47,15 +47,15 @@ table {
 	border-spacing: 0;
 }
 
-
-
 .wrap {
     margin: 0 auto;
     border: 6px solid red;
+    max-width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .header ul{
     display: flex; 
-    border: 5px solid orange; 
     justify-content: center;
     height: 50px;  
     padding: 10px;
@@ -68,25 +68,146 @@ table {
     color: black;
 }
 .menu{
-    border: 4px solid yellowgreen;   
     display: flex;
-    height: 50px;
+    border-top: 2px solid rgba(180, 171, 171, 0.829);
+    border-bottom: 2px solid rgba(180, 171, 171, 0.829);
 }
 .menu img{
-    height: 50px;
+    width: 100%;
+}
+.menu-text{  
+    margin: auto 0; /* 前面是上下 後面左右*/
+}
+.menu .time{
+    font-size: 16px;
+    margin-left: 4px;
+}
+.menu .mixtext{
+    display: flex;
+    color: blue;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.menu .new{
+    font-size: 16px;
+    display: block;
+    background: blue;
+    width: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    padding-top: 3px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.menu-text h2{
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .content{
-    border: 3px solid green;
-    height: 50px;   
+    max-width: 50%;
+    border: 3px solid green; 
+    margin: 0 auto;
+}
+.content .contentImg{
+    width: 100%;
+}
+.content .contentTitle{
+    color: blue;
+    font-size: 24px;
+    margin: 20px auto;
+}
+.content .subtitle{
+    font-size: 20px;
+    margin: 10px auto;
+}
+.content .content-p{
+    font-size: 16px;
+    margin: 10px auto;
+    line-height: 1;
+}
+.content .content-ol li{
+    list-style:decimal;
+    margin-left: 18px;
+}
+.content .content-ul li{
+    list-style:disc;
+    margin-left: 18px;
+}
+.content .point{
+    background: gainsboro;
+    border-radius: 24px;
+    padding: 24px;
+    height: 24px;
+}
+.content .content-a{
+    text-decoration: none;
+}
+.content .foreword{
+    border: 3px solid orange; 
+    max-width: 85%;
+    margin: 50px 50px 50px 50px;
+}
+.content .foreword p{
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.content .base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
+    border: 4px solid darkgreen;
+    margin: 50px;
+    max-width: 85%;
+}
+.content .btn-NextUP{
+    justify-content: space-between;
+    display: flex;
+    border: 3px solid darkred; 
+    margin: 50px; 
+    max-width: 85%;
+    
+}
+.content .btn a{
+    display: flex;
+    text-decoration: none;
+    color: #4B4B4B;
+    border-radius: 40px;
+    border: 1px solid black;
+    padding: 8px 16px;
+}
+.content .btn img{
+    margin: 0px/*上面*/ 5px/*右邊*/ 0px/*下面*/ 5px/*左邊*/;
 }
 .information{
     border-top: 2px solid blue;
-    height: 50px;   
     text-align: center;
     font-size: 25px;
+    display: flex;
+    justify-content:space-between; /*justify-content:space-between>>靠左靠右*/
+}
+.information .email{
+   font-size: 32px;
+   margin: 80px 0;
+}
+.information .community{
+    width: 236px;
+    margin: 80px 0;
+}
+.community img{
+    margin: 5px;
+    width: 24px;
+    height: 24px;
 }
 .footer{
-    height: 25px;   
     text-align: center;
     padding: 5px;
+}
+.footer h6{
+    margin: 24px 0;
+}
+@media(max-width:992px) {
+    .menu-text {
+        flex-direction: column;
+    }
 }
