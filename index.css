@@ -52,7 +52,7 @@ table {
 
 .wrap {
     margin: 0 auto;
-    border: 6px solid red;
+    /* border: 6px solid red; */
     max-width:100%;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -111,14 +111,14 @@ table {
 }
 .content{
     max-width: 50%;
-    border: 3px solid green; 
+    /* border: 3px solid green;  */
     margin: 0 auto;
 }
 .content .contentImg{
     width: 100%;
 }
 .content .contentTitle{
-    color: blue;
+    /* color: blue; */
     font-size: 24px;
     margin: 20px auto;
 }
@@ -148,7 +148,7 @@ table {
     text-decoration: none;
 }
 .content .foreword{
-    border: 3px solid orange; 
+    /* border: 3px solid orange;  */
     max-width: 85%;
     margin: 50px 50px 50px 50px;
 }
@@ -158,14 +158,14 @@ table {
     line-height: 1.5;
 }
 .content,.base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
-    border: 4px solid darkgreen;
+    /* border: 4px solid darkgreen; */
     margin: 50px;
     max-width: 85%;
 }
 .content .btn-NextUP{
     justify-content: space-between;
     display: flex;
-    border: 3px solid darkred; 
+    /* border: 3px solid darkred;  */
     margin: 50px; 
     max-width: 85%;
 }
@@ -181,19 +181,21 @@ table {
     margin: 0px/*上面*/ 5px/*右邊*/ 0px/*下面*/ 5px/*左邊*/;
 }
 .information{
-    border-top: 2px solid blue;
+    /* border-top: 2px solid blue; */
     text-align: center;
     font-size: 25px;
     display: flex;
-    justify-content:space-between; /*justify-content:space-between>>靠左靠右*/
+    justify-content:space-around; /*justify-content:space-between>>靠左靠右*/
 }
 .information .email{
    font-size: 32px;
    margin: 80px 0;
+   padding: 40px;
 }
 .information .community{
     width: 236px;
     margin: 80px 0;
+    padding: 40px;
 }
 .community img{
     margin: 5px;
@@ -235,7 +237,7 @@ table {
         margin: 0px;
     }
     .content .foreword,.base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
-        border: 3px solid blue; 
+        /* border: 3px solid blue;  */
         max-width: 100%; /* 確保圖片/影片不會超出其父容器 */
         margin: 0px;
         padding: 10px;
@@ -243,7 +245,7 @@ table {
     .content .btn-NextUP{
         justify-content: space-between;
         display: flex;
-        border: 3px solid darkred; 
+        /* border: 3px solid darkred;  */
         margin: 0px; 
         max-width: 100%;
     }
@@ -253,9 +255,17 @@ table {
     }
     .information .email{
         margin: 0px auto;
-        font-size: 25px;
+        font-size: 15px;
     }
     .information .community{
         margin: 0px auto;
     } 
+    .community img{
+        margin: 5px;
+        width: 15px;
+        height: 15px;
+    }
+    .footer h6{
+        font-size: 10px;
+    }
 }
