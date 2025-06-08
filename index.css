@@ -47,6 +47,9 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
 .wrap {
     margin: 0 auto;
     border: 6px solid red;
@@ -140,7 +143,6 @@ table {
     background: gainsboro;
     border-radius: 24px;
     padding: 24px;
-    height: 24px;
 }
 .content .content-a{
     text-decoration: none;
@@ -155,7 +157,7 @@ table {
     margin-top: 20px;
     line-height: 1.5;
 }
-.content .base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
+.content,.base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
     border: 4px solid darkgreen;
     margin: 50px;
     max-width: 85%;
@@ -166,7 +168,6 @@ table {
     border: 3px solid darkred; 
     margin: 50px; 
     max-width: 85%;
-    
 }
 .content .btn a{
     display: flex;
@@ -206,8 +207,55 @@ table {
 .footer h6{
     margin: 24px 0;
 }
-@media(max-width:992px) {
-    .menu-text {
-        flex-direction: column;
+@media(max-width: 768px) {
+
+    .wrap{
+        max-width: 50%;
     }
+    .header ul{
+        display: flex; 
+        justify-content: center;
+        height: 50px;  
+        padding: 10px;
+    }
+    .headertype{
+        text-decoration: none;
+        display: block; 
+        margin: 15px;
+        font-size: 25px;
+        color: black;
+    }
+    .menu{
+        flex-wrap: wrap;
+        border-top: 2px solid rgba(180, 171, 171, 0.829);
+        border-bottom: 2px solid rgba(180, 171, 171, 0.829);
+    }
+    .content{
+        max-width: 100%;
+        margin: 0px;
+    }
+    .content .foreword,.base,.FrameworkTools,.keepgoing,.conclusion,.furtherreading{
+        border: 3px solid blue; 
+        max-width: 100%; /* 確保圖片/影片不會超出其父容器 */
+        margin: 0px;
+        padding: 10px;
+    }
+    .content .btn-NextUP{
+        justify-content: space-between;
+        display: flex;
+        border: 3px solid darkred; 
+        margin: 0px; 
+        max-width: 100%;
+    }
+    .information{
+        /* display: none;>>隱藏區塊 */
+        flex-wrap: wrap;
+    }
+    .information .email{
+        margin: 0px auto;
+        font-size: 25px;
+    }
+    .information .community{
+        margin: 0px auto;
+    } 
 }
